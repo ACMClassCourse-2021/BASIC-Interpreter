@@ -7,7 +7,7 @@
 
 ## 前置工作
 
-首先，为了score.cpp能测测评你的程序：
+首先，为了score.cpp能测评你的程序：
 
 如果你用的是wsl，请删除Basic-Demo-64bit_for_mac_to_be_rename
 
