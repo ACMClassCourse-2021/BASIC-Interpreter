@@ -5,8 +5,8 @@
  * the finished version, this file will also specify subclasses
  * for each of the statement types.  As you design your own
  * version of this class, you should pay careful attention to
- * the exp.h interface specified in Chapter 17, which is an
- * excellent model for the Statement class hierarchy.
+ * the exp.h interface, which is an excellent model for
+ * the Statement class hierarchy.
  */
 
 #ifndef _statement_h
