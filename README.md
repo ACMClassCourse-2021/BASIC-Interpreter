@@ -1,7 +1,10 @@
 # BASIC Interpreter - 2021
 
-
 **ddl：第12周周一23:00**
+
+BASIC是一门解释性编程语言，本次大作业要求你用c++实现这个语言中的一些功能，来完成一个 Minimal 版本的 BASIC 解释器。
+
+这个解释器既可以立即解释某些语句并运行，又可以编写一个按照行数升序依次运行的大程序，还有一些控制语句。
 
 
 
@@ -13,7 +16,7 @@
 
 如果你用的是mac，请删除Basic-Demo-64bit，**并将Basic-Demo-64bit_for_mac_to_be_rename改名为Basic-Demo-64bit**
 
-Basic-Demo-64bit是标程的可执行文件，你可以用命令行来运行它，看看BASIC解释器是如何工作的。
+**Basic-Demo-64bit是标程的可执行文件**，你可以用命令行来运行它，看看BASIC解释器是如何工作的。
 
 
 
@@ -25,15 +28,32 @@ Basic-Demo-64bit是标程的可执行文件，你可以用命令行来运行它�
 
 本作业会引用下发的库 StanfordCPPLib。要用到的库中的文件已经被include到各头文件中了，当然你愿意的话也可以自己使用该库的其它文件。你**不应修改**这个库中的任何内容。关于该库的使用，可以查阅官方文档[The StanfordCPPLib package](https://cs.stanford.edu/people/eroberts/StanfordCPPLib/doc/index.html)
 
-由于StanfordCPPLib是自带内存泄漏的（用valgrind跑一遍原始下发代码就可以检测出来），**本次大作业不检测内存泄露**。
+关于具体的BASIC解释器的语法要求与其它说明，请见**Minimal BASIC Interpreter - 2021.pdf**
 
-关于具体的BASIC解释器的语法要求与其它说明，请见Minimal BASIC Interpreter - 2021.pdf
+
+
+代码框架简述：
+
+- Basic.cpp是主程序，读入一行一行。
+
+现在只完成了计算器，步骤为
+
+1. 用针对Expression的parser（定义在parser文件中）去把读入的行解释成一颗Expression语法树。
+2. 计算这个Expression语法树并输出答案（Expression的定义与计算部分都在exp文件中）。
+
+
+
+对完整版：
+
+1. 你需要另一种针对Statement的parser（和parser文件没有关系，因为parser文件里只有针对Expression的parser）去把输入字符串解释成Statement语法树。记录与parse的字符串的工作在program文件中。
+2. Statement的定义与计算部分都在statement文件中。
+3. 程序运行过程的变量与值都保存在evalstate文件中。
 
 
 
 ## 本地测评方法
 
-score.cpp是测评文件，会寻找你的可执行文件与Basic-Demo-64bit进行对拍（对拍，指进行相同输入看输出是否相同）。
+**score.cpp是测评文件**，会寻找你的可执行文件与Basic-Demo-64bit进行对拍（对拍，指进行相同输入看输出是否相同）。
 
 测评文件内容默认是Test文件夹下提供的文件。这些文件和oj中测评的数据点是相同的。在这些测试点下，你的程序需要输出与标程相同的结果。
 
@@ -58,7 +78,7 @@ g++ -o score score.cpp
 
 ## oj提交方法
 
-本大作业使用github进行测评。提交时，你的github仓库下需要有一个Basic文件夹，一个提供的StanfordCPPLib文件夹，与一个提供的CMakeLists.txt。
+本次大作业**使用github进行测评**。提交时，你的github仓库下需要有一个Basic文件夹，一个提供的StanfordCPPLib文件夹，与一个提供的CMakeLists.txt。
 
 
 
