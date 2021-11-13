@@ -25,6 +25,8 @@ Basic-Demo-64bit是标程的可执行文件，你可以用命令行来运行它�
 
 本作业会引用下发的库 StanfordCPPLib。要用到的库中的文件已经被include到各头文件中了，当然你愿意的话也可以自己使用该库的其它文件。你**不应修改**这个库中的任何内容。关于该库的使用，可以查阅官方文档[The StanfordCPPLib package](https://cs.stanford.edu/people/eroberts/StanfordCPPLib/doc/index.html)
 
+由于StanfordCPPLib是自带内存泄漏的（用valgrind跑一遍原始下发代码就可以检测出来），**本次大作业不检测内存泄露**。
+
 关于具体的BASIC解释器的语法要求与其它说明，请见Minimal BASIC Interpreter - 2021.pdf
 
 
