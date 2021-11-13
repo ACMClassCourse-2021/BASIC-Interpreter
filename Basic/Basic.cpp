@@ -46,8 +46,8 @@ int main() {
  * Usage: processLine(line, program, state);
  * -----------------------------------------
  * Processes a single line entered by the user.  In this version of
- * implementation, the program will read a line, parse it as an expression,
- * and then print the result.  In your implementation, you will
+ * implementation, the program reads a line, parses it as an expression,
+ * and then prints the result.  In your implementation, you will
  * need to replace this method with one that can respond correctly
  * when the user enters a program line (which begins with a number)
  * or one of the BASIC commands, such as LIST or RUN.
