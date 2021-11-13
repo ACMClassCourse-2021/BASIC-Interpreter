@@ -21,9 +21,9 @@ Basic-Demo-64bit是标程的可执行文件，你可以用命令行来运行它�
 
 提供了CMakeLists.txt，因此你可以直接用CLion打开下发的文件夹，直接就可以编译运行了。
 
-你在写程序的时候只需要完成Basic文件中的内容。默认什么都不写就已经完成了一个计算器（如：输入1+1，回车，输出2），你需要自行阅读代码来判断你需要编写或增添哪些文件中的哪些部分。
+你在写程序的时候只需要完成Basic文件中的内容。默认什么都不写就已经完成了一个计算器（如：输入1+1，回车，输出2），你需要自行阅读代码来判断你需要编写或增添哪些文件中的哪些部分。你也可以自行添加文件，更改类或文件的结构，不必拘泥于提供的框架，只需要在code review时向助教说明你的架构即可。
 
-本作业会引用下发的库 StanfordCPPLib。要用到的库中的文件已经被include到各头文件中了，当然你愿意的话也可以自己使用该库的其它文件。理论上你不应修改这个库中的任何内容。关于该库的使用，可以查阅官方文档[The StanfordCPPLib package](https://cs.stanford.edu/people/eroberts/StanfordCPPLib/doc/index.html)
+本作业会引用下发的库 StanfordCPPLib。要用到的库中的文件已经被include到各头文件中了，当然你愿意的话也可以自己使用该库的其它文件。你**不应修改**这个库中的任何内容。关于该库的使用，可以查阅官方文档[The StanfordCPPLib package](https://cs.stanford.edu/people/eroberts/StanfordCPPLib/doc/index.html)
 
 关于具体的BASIC解释器的语法要求与其它说明，请见Minimal BASIC Interpreter - 2021.pdf
 
