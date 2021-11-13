@@ -20,8 +20,8 @@
  * environment that the evaluator may need to know.  In this
  * version, the only information maintained by the EvalState class
  * is a symbol table that maps variable names into their values.
- * Several of the exercises, however, require you to include
- * additional information in the EvalState class.
+ * In your implementation, you may include additional information
+ * in the EvalState class.
  */
 
 class EvalState {
