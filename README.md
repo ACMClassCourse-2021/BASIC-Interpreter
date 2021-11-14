@@ -24,7 +24,7 @@ BASIC是一门解释性编程语言，本次大作业要求你用c++实现这个
 
 提供了CMakeLists.txt，因此你可以直接用CLion打开下发的文件夹，直接就可以编译运行了。
 
-你在写程序的时候只需要完成Basic文件中的内容。默认什么都不写就已经完成了一个计算器（如：输入1+1，回车，输出2），你需要自行阅读代码来判断你需要编写或增添哪些文件中的哪些部分。你也可以自行添加文件，更改类或文件的结构，不必拘泥于提供的框架，只需要在code review时向助教说明你的架构即可。
+你在写程序的时候只需要完成Basic文件中的内容。默认什么都不写就已经完成了一个可定义变量的计算器（如：输入x=1+1，回车，输出2，再输入x+x，输出4），你需要自行阅读代码来判断你需要编写或增添哪些文件中的哪些部分。你也可以自行添加文件，更改类或文件的结构，不必拘泥于提供的框架，只需要在code review时向助教说明你的架构即可。
 
 本作业会引用下发的库 StanfordCPPLib。要用到的库中的文件已经被include到各头文件中了，当然你愿意的话也可以自己使用该库的其它文件。你**不应修改**这个库中的任何内容。关于该库的使用，可以查阅官方文档[The StanfordCPPLib package](https://cs.stanford.edu/people/eroberts/StanfordCPPLib/doc/index.html)
 
@@ -36,18 +36,21 @@ BASIC是一门解释性编程语言，本次大作业要求你用c++实现这个
 
 - Basic.cpp是主程序，读入一行一行。
 
-现在只完成了计算器，步骤为
+现在只完成了一个可以定义变量的计算器，计算步骤为
 
 1. 用针对Expression的parser（定义在parser文件中）去把读入的行解释成一颗Expression语法树。
+
 2. 计算这个Expression语法树并输出答案（Expression的定义与计算部分都在exp文件中）。
+
+   而程序运行过程的变量与值都保存在evalstate文件中。
 
 
 
 对完整版：
 
-1. 你需要另一种针对Statement的parser（和parser文件没有关系，因为parser文件里只有针对Expression的parser）去把输入字符串解释成Statement语法树。记录与parse的字符串的工作在program文件中。
-2. Statement的定义与计算部分都在statement文件中。
-3. 程序运行过程的变量与值都保存在evalstate文件中。
+- 你需要另一种针对Statement的parser（和parser文件没有关系，因为parser文件里只有针对Expression的parser）去把输入字符串解释成Statement语法树。记录与parse的字符串的工作在program文件中。
+
+- Statement的定义与计算部分都在statement文件中。
 
 
 
