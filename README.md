@@ -93,13 +93,13 @@ g++ -o score score.cpp
 
 
 
-如果**Compile Error**并且报错如下，
+如果**Compile Error**并且报错类似下面的样子，
 
-Testpoint 1: 
-**Compile Error** 
-Time Used: 0ms Mem Used:0KiB Info:
+`Cloning into 'your_repo_name'... fatal: unable to access 'https://github.com/your_user_name/your_repo_name/': Failed to connect to github.com port 443: Connection timed out  `
 
-`Cloning into 'temporary-test'... fatal: unable to access 'https://github.com/your_user_name/your_repo_name/': Failed to connect to github.com port 443: Connection timed out  `
+或
+
+`Cloning into 'your_repo_name'... fatal: unable to access 'https://github.com/your_user_name/your_repo_name/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.  `
 
 可能是因为github访问速度较慢。你只需要将**提交的地址改为**https://github.com.cnpmjs.org/your_user_name/your_repo_name形式的地址就可以进行镜像加速从而解决这个问题了。针对这个功能，推荐浏览器插件“GitHub加速”。
 
