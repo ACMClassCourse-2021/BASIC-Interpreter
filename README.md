@@ -14,11 +14,17 @@ BASIC是一门解释性编程语言，本次大作业要求你用c++实现这个
 
 首先，为了score.cpp能测评你的程序：
 
-如果你用的是wsl，请删除Basic-Demo-64bit_for_mac_to_be_rename
+如果你用的是wsl或linux，请删除Basic-Demo-64bit_for_mac_to_be_rename
 
 如果你用的是mac，请删除Basic-Demo-64bit，**并将Basic-Demo-64bit_for_mac_to_be_rename改名为Basic-Demo-64bit**
 
-**Basic-Demo-64bit是标程的可执行文件**，你可以用命令行来运行它，看看BASIC解释器是如何工作的。
+之后的步骤中我们认为你完成了此操作。
+
+
+
+**Basic-Demo-64bit是标程的可执行文件**，你可以用命令行输入`./Basic-Demo-64bit`来运行它，看看BASIC解释器是如何工作的。
+
+如果你用的不是wsl，而是mac或linux，在运行`./Basic-Demo-64bit`的时候，可能会出现 Permission denied 错误。这时候运行`chmod +x Basic-Demo-64bit`应当可以解决此问题
 
 
 
